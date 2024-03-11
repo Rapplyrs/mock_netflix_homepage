@@ -1,0 +1,68 @@
+.bar_one_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Adjust background color */
+    color: #fff; /* Adjust text color */
+    height: 60px; 
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 2;
+    position: sticky;
+}
+
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Style for the logo */
+.navbar img {
+    width: 100px; /* Adjust logo size as needed */
+    height: auto;
+}
+
+/* Style for the navbar list */
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.navbar-list li {
+    margin-right: 20px; /* Adjust spacing between list items */
+    font-size: 12px; /* Adjust font size */
+}
+
+/* Style for the sign-on bar */
+.sign_on_bar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: auto; 
+    margin-bottom: 15px;
+}
+
+/* Style for the item containers */
+.item_container {
+    margin-right: 10px; /* Adjust spacing between items */
+}
+
+/* Style for the profile image */
+.sign_on_bar img {
+    width: 30px; /* Adjust profile image size as needed */
+    height: 30px;
+    border-radius: 20%; /* Make the profile image round */
+}
+
+.navbar img {
+    width: 100px;
+    height: auto; 
+    margin-right: 20px;
+}
+

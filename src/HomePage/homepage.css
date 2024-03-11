@@ -1,0 +1,128 @@
+.homepage-container{
+    position: relative;
+    width:100%; 
+    z-index: 1;
+    top:0; 
+    left: 0; 
+}
+
+
+.img-container{
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.img_background{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    position: relative; 
+
+}
+
+.info-container {
+    position: relative;
+    width: 650px;
+    margin-left: 50px ;
+    top: -650px;
+    z-index: 1;
+
+}
+
+.select_options{
+    display: flex;
+    flex-direction: row; 
+}
+
+.movie_ranking_header{
+    display: flex; 
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.movie_ranking_header img{
+    width: 30px; 
+    height: 30px; 
+
+}
+
+.movie_ranking_header h1{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.play_button_container{
+    width: 125px;
+    height: 50px; 
+    display: flex; 
+    flex-direction: row;
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    border-radius: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.play_button_container img{
+    margin-top: 10px;
+    padding: 0; 
+    width: 25px;
+    height: 25px; 
+}
+
+.play_button_container h1{
+    padding: 0; 
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.items_1{
+    display:flex; 
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.more_info_container{
+    width: 150px;
+    height: 50px; 
+    display: flex; 
+    flex-direction: row;
+    background-color: #8f8f8f;
+    color: #fff;
+    align-items: center;
+    border-radius: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 15px;
+}
+
+.more_info_container img{
+    margin-top: 10px;
+    padding: 0; 
+    width: 25px;
+    height: 25px; 
+    filter: invert(100%);
+}
+
+.more_info_container h1{
+    padding: 0; 
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.items_2{
+    display:flex; 
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+}
