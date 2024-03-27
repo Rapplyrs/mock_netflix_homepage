@@ -13,6 +13,10 @@ import truman from '../assets/the_truman_show.jpg'
 import rainman from '../assets/rain_man.jpg'
 import casino from '../assets/casino.jpeg'
 import glory from '../assets/glory.jpeg'
+import men from '../assets/men_in_black.jpeg'
+import scream from '../assets/scream.jpeg'
+import donnie from '../assets/donnie_darko.jpeg'
+
 
 
 export const sliderInfo = [
@@ -77,5 +81,18 @@ export const sliderInfo = [
         {
                 id: 15, 
                 image: glory,
+        }, 
+        {
+                id: 16,
+                image: men
+        }, 
+        {
+                id: 17, 
+                image: scream
+        }, 
+        {
+                id: 18, 
+                image: donnie
         }
+
 ]
