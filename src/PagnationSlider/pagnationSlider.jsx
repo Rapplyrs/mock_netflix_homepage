@@ -3,23 +3,67 @@ import { useState, useRef } from 'react'
 import './pagnationSlider.css'
 import {sliderInfo} from '../constants/index.js'
 import backbutton from './Back_Button.png'
+import frontButton from './Front_Button.png'
 
  const paginationSlider = () => {
 
+const [sliderIndex, setSliderIndex] = useState(0);
+const [items, setItems] = useState(6); 
+const items_count = sliderInfo.length; 
 
+const progress_bar_count = Math.ceil(items_count / items); 
+
+
+
+ const handleLeftButton = () => {
+
+
+  setSliderIndex(prevIndex => prevIndex - 1);
+ } 
+
+ const handleRightButton = () => {
+  setSliderIndex(prevIndex => prevIndex + 1);
+
+
+ }
 
   return (
-
+    <div className = "row">
+      <div className = "header">
+        <h3>Ravo's Classics</h3>
+        <div className = "progress">
+          {
+            Array.from({ length: progress_bar_count}, (_, index) => {
+              let class_name = ''; // Initialize className variable
+              // Conditionally setting className based on index
+              if (index === sliderIndex) {
+                class_name = 'progress-item';
+              } else {
+                class_name = 'progress-item active';
+              }
+               return <div key={index} className = {class_name}></div>
+ })
+            }
+        </div>
+      </div>
 
     <div className="slider-container">
-      <div className = "slider">
+      <button className = "side left-button" onClick = {handleLeftButton}>
+        <img src = {backbutton}/>
+      </button>
+      <div className = "slider" style={{ transform: `translateX(calc(${sliderIndex} * -100%))` }} >
       {sliderInfo.map((data) => (
                 <>
-                    <img src = {data.image} alt = {data.id}/>
+                  <img src={data.image} style={{ flex: `0 0 calc(100% / ${items})`, maxWidth: `calc(100% / ${items})` }} alt={data.id} />
                   
                 </>
               ))}
       </div>
+      <button className = "side right-button" onClick={handleRightButton}>
+        <img src = {frontButton}/>
+      </button>
+    </div>
+
     </div>
 
 

@@ -8,8 +8,10 @@ function App() {
   return (
     <div className = "App_container">
         <Navbar/>
+        <div>
         <HomePage/>
         <PaginationSlider/>
+        </div>
     </div>
   )
 }
