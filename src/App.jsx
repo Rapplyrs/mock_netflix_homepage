@@ -6,12 +6,10 @@ import PaginationSlider from './PagnationSlider/pagnationSlider'
 function App() {
 
   return (
-    <div className = "App_container">
-        <Navbar/>
-        <div>
-        <HomePage/>
-        <PaginationSlider/>
-        </div>
+    <div className="App_container" style={{ position: 'relative' }}>
+        <Navbar  style={{ zIndex: 3 }} />
+        <HomePage style={{ zIndex: 1 }} />
+        <PaginationSlider style={{ zIndex: 2 }} />
     </div>
   )
 }

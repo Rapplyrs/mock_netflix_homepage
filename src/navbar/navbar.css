@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Adjust background color */
+    background-color: transparent; /* Adjust background color */
     color: #fff; /* Adjust text color */
     height: 60px; 
     width: 100%;
@@ -31,12 +31,22 @@
     margin: 0;
     padding: 0;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: 15px;
 }
+
 
 .navbar-list li {
     margin-right: 20px; /* Adjust spacing between list items */
     font-size: 12px; /* Adjust font size */
+    transition: transform 250ms ease-in-out;
+    color: rgb(224,224,224);
+    cursor: pointer; 
+}
+
+.navbar-list li:hover{
+    color: grey;
+    
 }
 
 /* Style for the sign-on bar */

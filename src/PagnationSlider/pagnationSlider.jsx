@@ -17,13 +17,26 @@ const progress_bar_count = Math.ceil(items_count / items);
 
  const handleLeftButton = () => {
 
+  if (sliderIndex === 0){
+    setSliderIndex(prevIndex => progress_bar_count - 1);
+  }
+  else{
 
   setSliderIndex(prevIndex => prevIndex - 1);
+  }
+
  } 
 
  const handleRightButton = () => {
-  setSliderIndex(prevIndex => prevIndex + 1);
 
+  if (sliderIndex === progress_bar_count - 1){
+    setSliderIndex(prevIndex => 0);
+
+  }else {
+
+  
+  setSliderIndex(prevIndex => prevIndex + 1);
+  }
 
  }
 
@@ -37,9 +50,9 @@ const progress_bar_count = Math.ceil(items_count / items);
               let class_name = ''; // Initialize className variable
               // Conditionally setting className based on index
               if (index === sliderIndex) {
-                class_name = 'progress-item';
-              } else {
                 class_name = 'progress-item active';
+              } else {
+                class_name = 'progress-item';
               }
                return <div key={index} className = {class_name}></div>
  })
@@ -63,9 +76,9 @@ const progress_bar_count = Math.ceil(items_count / items);
         <img src = {frontButton}/>
       </button>
     </div>
-
+      
     </div>
-
+    
 
 
 

@@ -1,11 +1,13 @@
 .homepage-container{
     position: relative;
     width:100%; 
-    height:750px;
+    height:900px;
     overflow: hidden;
     z-index: 1;
     top:0; 
     left: 0; 
+    margin-top: -100px; /* Negative margin to overlap */
+
 }
 
 
@@ -14,14 +16,14 @@
     display:flex;
     position: relative;
     max-width: 100%;
-    height:auto;
+    height:900px;
     padding: 0;
     margin: 0;
 }
 
 .img_background{
     width: 100%;
-    height:auto;
+    height:100%;
     padding: 0;
     margin: 0;
     object-fit: cover;
@@ -74,7 +76,12 @@
     border-radius: 10%;
     padding-top: 0px;
     padding-bottom: 0px;
+    cursor: pointer; 
 
+}
+
+.play_button_container:hover{
+    background-color: rgb(240,240,240);
 }
 
 .play_button_container img{
@@ -102,15 +109,19 @@
     height: 50px; 
     display: flex; 
     flex-direction: row;
-    background-color: #8f8f8f;
+    background-color: rgb(112,112,112);
     color: #fff;
     align-items: center;
     border-radius: 10%;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
+.more_info_container:hover{
+    background-color: rgb(112,112,112, 0.5);
+}
 .more_info_container img{
     margin-top: 10px;
     padding: 0; 
